@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr class="head">
+      <th >العميل</th>
+      <th>تاريخ التعيين</th>
+      <th>تاريخ إلغاء التعيين</th>
+      <th>المسئول عم التعيين</th>
+      <th>الدقائق المحلية</th>
+      <th>الدقائق الدولية</th>
+      <th>المبلغ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of displayedItems">
+      <td class="custom-td"><img [src]="item.companyImage" alt=""> {{ item.companyName }}</td>
+      <td>{{ item.hireDate }}</td>
+      <td>{{ item.releaseDate }}</td>
+      <td>{{ item.supervisor }}</td>
+      <td>{{ item.localMinutes }}</td>
+      <td>{{ item.globalMinutes }}</td>
+      <td>{{ item.cash }}</td>
+    </tr>
+  </tbody>
+</table>

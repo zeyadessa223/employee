@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="data-div">
+      <h1>عرض</h1>
+      <p>{{itemsPerPage}}</p>  <h4>من اصل</h4>
+      <p>{{totalItems}}</p> </div>
+      <div class="pagination">
+        <a (click)="changePage(currentPage - 1)" [class.disabled]="currentPage === 1">&lt;</a>
+        <a *ngFor="let page of [].constructor(totalPages); let i = index"
+           (click)="changePage(i + 1)" [class.active]="i + 1 === currentPage">
+          {{ i + 1 }}
+        </a>
+        <a (click)="changePage(currentPage + 1)" [class.disabled]="currentPage === totalPages">&gt;</a>
+      </div>
+    
+  </div>
+
+

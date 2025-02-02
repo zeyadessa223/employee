@@ -1,0 +1,63 @@
+<div class="head">
+  <div class="close-div"><p>X</p></div>
+  <div class="show-div">
+    <h1>عرض الرقم</h1>
+    <div class="hash-div"><h3>#</h3></div>
+  </div>
+</div>
+<div class="card-div">
+  <div class="card-head">
+    <div class="use-div">
+      <p>01223345576</p>
+      <button class="btn1">قيد الاستخدام</button>
+    </div>
+    <button class="toggle-btn"  (click)="toggleDiv()" >
+      <img src="icons/toggle.svg" alt=""/>
+      <div class="toggle-div" *ngIf="isDivShown">
+        <div class="item">تعديل الرقم</div>
+        <div class="item">إلغاء التعيين</div>
+      </div>
+    </button>
+  </div>
+  <div class="item-main">
+    <div class="item-layout">
+      <div class="item">
+        <div class="title">اسم البروتوكول</div>
+        <div class="desc">فوداوفون مصر</div>
+      </div>
+      <div class="item">
+        <div class="title">الدولة</div>
+        <div class="desc">
+          فلسطين
+          <img src="images/download.png" alt="" class="item-img" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="title">العميل الحالي</div>
+        <div class="desc">الشركة الألمانية</div>
+      </div>
+      <div class="item">
+        <div class="title">عدد الامدادات</div>
+        <div class="desc">09</div>
+      </div>
+    </div>
+    <div class="item-layout">
+      <div class="item">
+        <div class="title">تاريخ اخر شحنة</div>
+        <div class="desc">29/12/2024</div>
+      </div>
+      <div class="item">
+        <div class="title">الرصيد</div>
+        <div class="desc">5000 EGP</div>
+      </div>
+      <div class="item">
+        <div class="title">الرصيد المستخدم للعميل الحالي</div>
+        <div class="desc">5000 EGP</div>
+      </div>
+      <div class="item">
+        <div class="title">الرصيدالمستخدم ككل</div>
+        <div class="desc">5000 EGP</div>
+      </div>
+    </div>
+  </div>
+</div>

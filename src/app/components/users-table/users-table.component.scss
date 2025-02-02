@@ -1,0 +1,107 @@
+table {
+    width: 100%;
+    padding: 12px;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    width: 100%;
+    background-color: #F4F5F7;
+    height: 40px;
+  }
+  
+  thead tr {
+    padding: 2%;
+  }
+  
+  thead th {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #6B7280;
+    text-align: right;
+    border: none;
+    font-family: 'Neo Sans Arabic', sans-serif;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  tbody .custom-td {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  tbody td {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'Neo Sans Arabic', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* RESPONSIVENESS */
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media screen and (max-width: 768px) {
+    table {
+      display: block; /* Enable block layout for overflow handling */
+      overflow-x: auto;
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+    
+    thead {
+      display: none; /* Hide the table header */
+    }
+  
+    tbody tr {
+      display: block; /* Make rows block for better stacking */
+      margin-bottom: 10px;
+    }
+  
+    tbody td {
+      display: flex;
+      justify-content: space-between; /* Create a key-value look */
+      padding: 8px 0;
+    }
+  
+    tbody .custom-td {
+      display: block; /* Stack image and text vertically */
+    }
+  
+    tbody td:before {
+      content: attr(data-label); /* Use data-label for accessibility */
+      font-weight: 600;
+      color: #6B7280;
+      margin-right: 10px;
+    }
+  }
+  
+  /* For tablet screens (300px to 700px) */
+  @media screen and (min-width: 300px) and (max-width: 700) {
+    table {
+      font-size: 12px; /* Reduce font size */
+    }
+  
+    thead th,
+    tbody td {
+      padding: 8px;
+    }
+  }
+  
+  /* For laptop screens (1024px and up) */
+  @media screen and (min-width: 701px) {
+    table {
+      font-size: 14px;
+    }
+  
+    thead th,
+    tbody td {
+      padding: 10px;
+    }
+  }
+  

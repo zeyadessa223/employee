@@ -1,0 +1,13 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="main-div">
+    <app-users-table 
+      [items]="items"  [currentPage]="currentPage"
+      [itemsPerPage]="itemsPerPage">
+    </app-users-table>
+    <app-table-pagination 
+      [totalItems]="items.length"  [currentPage]="currentPage"
+      (pageChange)="onPageChange($event)">
+    </app-table-pagination>
+    <app-creator-data></app-creator-data>
+  </div>

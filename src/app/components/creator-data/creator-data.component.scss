@@ -1,0 +1,49 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  flex-wrap: wrap;
+    padding-bottom: 16px;
+    *{
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .user-data{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        .user-img{
+            width: 26px;
+            height: 26px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 95px;
+            }
+        }
+        .desc{
+           h1{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 500;
+            color: #6B7280;
+            font-family: 'Neo Sans Arabic', sans-serif; /* Apply the font family here */
+           } 
+           p{
+            font-size: 13px;
+            line-height: #1C1C28;
+            line-height: 16px;
+            font-family: 'Neo Sans Arabic', sans-serif; /* Apply the font family here */
+           }
+        }
+        .time{
+            font-size: 13px;
+            line-height: #1C1C28;
+            line-height: 16px;
+            font-family: 'Neo Sans Arabic', sans-serif; /* Apply the font family here */  
+        }
+    }
+}
